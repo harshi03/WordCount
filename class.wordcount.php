@@ -1,4 +1,4 @@
-<?
+<?php
 	class WordCounter
 	{ 
   		const ASC=1; //you need not use $ sign before Constants
