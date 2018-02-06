@@ -1,4 +1,4 @@
 <?php
-	include_once("class.wordcounter.php");
+	include_once('WordCounter.php');
 	$wc = new WordCounter("words.txt");
 	$wc->count(WordCounter::DESC);
