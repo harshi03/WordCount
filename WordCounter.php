@@ -1,5 +1,11 @@
 <?php
 
+if (!defined('NEWLINE')) {
+    define('NEWLINE', 
+        PHP_SAPI === 'cli' ? "\n" : "<br/>\n"
+    );
+}
+
 class WordCounter
 { 
     const ASC = 1; // You need not use $ sign before Constants.
@@ -23,7 +29,7 @@ class WordCounter
         }
         
         foreach ($this->words as $key => $val) {
-            echo $key ." = ". $val."<br/>";
+            echo $key ." = ". $val . NEWLINE;
         }
     }
 }
